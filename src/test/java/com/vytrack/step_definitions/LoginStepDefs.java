@@ -10,11 +10,11 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class LoginStepDefs {
+
     @Given("the user is on the login page")
-    public void the_user_is_on_the_login_page() throws InterruptedException{
+    public void the_user_is_on_the_login_page() {
         String url = ConfigurationReader.get("url");
         Driver.get().get(url);
-
     }
 
     @When("the user enters the driver information")
@@ -34,8 +34,8 @@ public class LoginStepDefs {
     }
     @When("the user logs in using {string} and {string}")
     public void the_user_logs_in_using_and(String username, String password) {
-        System.out.println("username = " + username);
-        System.out.println("password = " + password);
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(username, password);
     }
     @When("the user enters the sales manager information")
     public void the_user_enters_the_sales_manager_information() {
@@ -58,8 +58,8 @@ public class LoginStepDefs {
 
     @When("the user navigates to {string} {string}")
     public void the_user_navigates_to(String username, String password) {
-        LoginPage loginPage = new LoginPage();
-        loginPage.login(username, password);
+
+        new LoginPage().login(username, password);
     }
 
     @Then("the title contains {string}")

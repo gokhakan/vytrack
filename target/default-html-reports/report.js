@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/contacts.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/contact.feature");
 formatter.feature({
   "name": "Contacts page",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Menu Options",
+  "name": "Verify Create Calender Event",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -14,52 +14,36 @@ formatter.scenario({
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "the user logged in as \"driver\"",
+  "name": "the user is on the login page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "ContactsStepDefs.the_user_logged_in_as(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user should see following options",
-  "rows": [
-    {
-      "cells": [
-        "Fleet"
-      ]
-    },
-    {
-      "cells": [
-        "Customers"
-      ]
-    },
-    {
-      "cells": [
-        "Activities"
-      ]
-    },
-    {
-      "cells": [
-        "Systems"
-      ]
-    }
-  ],
+  "name": "the user enters the sales manager information",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user navigates to \"Activities\" \"Calender Events\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the title contains \"Calender\"",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "ContactsStepDefs.the_user_should_see_following_options(String\u003e)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "undefined"
 });
 });

@@ -9,11 +9,9 @@ public class LoginPage {
     public LoginPage (){
         PageFactory.initElements(Driver.get(), this);
     }
+    //these are the locators on the Homepage
     @FindBy(id="prependedInput")
     public WebElement userName;
-
-
-
 
     @FindBy (id="prependedInput2")
     public  WebElement password;

@@ -1,5 +1,6 @@
 
 Feature: User should be able to login
+
   @login
   Scenario: Login as a driver
     Given the user is on the login page

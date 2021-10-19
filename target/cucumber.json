@@ -3,86 +3,48 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-10-12T13:09:53.882Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3942539334,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "Menu Options",
+        "start_timestamp": "2021-10-15T12:16:49.118Z",
+        "line": 12,
+        "name": "Verify Create Calender Event",
         "description": "",
-        "id": "contacts-page;menu-options",
-        "after": [
-          {
-            "result": {
-              "duration": 72818083,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown()"
-            }
-          }
-        ],
+        "id": "contacts-page;verify-create-calender-event",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2195083,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 19,
-            "name": "the user logged in as \"driver\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"driver\"",
-                  "offset": 22
-                }
-              ],
-              "location": "ContactsStepDefs.the_user_logged_in_as(String)"
-            },
+            "line": 13,
+            "name": "the user is on the login page",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5095458,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 20,
-            "name": "the user should see following options",
-            "match": {
-              "location": "ContactsStepDefs.the_user_should_see_following_options(String\u003e)"
+            "line": 14,
+            "name": "the user enters the sales manager information",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Fleet"
-                ]
-              },
-              {
-                "cells": [
-                  "Customers"
-                ]
-              },
-              {
-                "cells": [
-                  "Activities"
-                ]
-              },
-              {
-                "cells": [
-                  "Systems"
-                ]
-              }
-            ],
+            "line": 15,
+            "name": "the user navigates to \"Activities\" \"Calender Events\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "the title contains \"Calender\"",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -97,7 +59,7 @@
     "description": "",
     "id": "contacts-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/contacts.feature",
+    "uri": "file:src/test/resources/features/contact.feature",
     "tags": []
   }
 ]
